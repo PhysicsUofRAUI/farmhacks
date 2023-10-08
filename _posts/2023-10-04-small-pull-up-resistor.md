@@ -19,3 +19,11 @@ if (one_middle == DEVICE_DISCONNECTED_C)
 ```
 
 After reading some more and just sort of guessing at the situation I am going to try lowering the pull-up resistor again to maybe as low as 220 Ohm.
+
+I estimated the capacitance to be 3200 pF because the length of the wire is about 160ft and the wire should have around 20pF/ft so,
+
+C = (160ft)(20pF/ft) = 3200 pF
+
+RC = (3200pF)(560 Ohm) = 1.8us
+
+This should be fine according to page 3 of the DS18B20 datasheet (https://www.analog.com/media/en/technical-documentation/data-sheets/DS18B20.pdf), but the cable might have a higher capacitance and it could be longer. 
